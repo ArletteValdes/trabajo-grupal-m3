@@ -57,10 +57,10 @@ pipeline {
         }
     post{
         success {
-            slackSend channel: "#devops", token: "HtH6rKeGnfVZkqfcQVY7RcqI", color: 'good', message: "${custom_msg1()}", teamDomain: 'prueba-4vd5809', username: 'jenkins'
+            slackSend channel: "#devops", token: "grupo_5_token_ultimate", color: 'good', message: "${custom_msg1()}", tokenCredentialId: 'grupo_5_token_ultimate', teamDomain: 'prueba-4vd5809', username: 'jenkins'
         }
         failure{
-            slackSend channel: "#devops", token: "HtH6rKeGnfVZkqfcQVY7RcqI", color: "danger", message: "${custom_msg()}", teamDomain: 'prueba-4vd5809', username: 'jenkins'
+            slackSend channel: "#devops", token: "grupo_5_token_ultimate", color: "danger", message: "${custom_msg()}", tokenCredentialId: 'grupo_5_token_ultimate', teamDomain: 'prueba-4vd5809', username: 'jenkins'
         }
     }
 }
