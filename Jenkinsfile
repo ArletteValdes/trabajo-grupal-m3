@@ -56,7 +56,7 @@ pipeline {
         }
         }
     post{
-        succeed {
+        success {
             slackSend channel: "#devops", token: "pNWA0uvG8p3yK9Xcra0oK7aJ", color: 'good', message: "${custom_msg()}", teamDomain: 'prueba-4vd5809', username: 'Luis_Rivas'
         }
         failure{
